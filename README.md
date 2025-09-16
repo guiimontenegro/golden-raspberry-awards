@@ -18,7 +18,7 @@ Golden Raspberry Dashboard
 
 1 - Clone the repository
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/guiimontenegro/golden-raspberry-awards.git
 cd your-repository
 
 2 - Install dependencies:
