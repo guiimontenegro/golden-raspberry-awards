@@ -13,6 +13,10 @@ const MoviesList: React.FC = () => {
   const [winner, setWinner] = useState<boolean | "">("");
 
   useEffect(() => {
+    setPage(0);
+  }, [year, winner]);
+
+  useEffect(() => {
     fetchMovies(
       page,
       size,
@@ -22,6 +26,9 @@ const MoviesList: React.FC = () => {
       .then((data) => {
         setMovies(data.content);
         setTotalPages(data.totalPages);
+        if (page >= data.totalPages && data.totalPages > 0) {
+          setPage(data.totalPages - 1);
+        }
       })
       .catch(console.error);
   }, [page, size, year, winner]);
