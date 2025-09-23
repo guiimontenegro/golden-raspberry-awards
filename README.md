@@ -14,7 +14,7 @@ Golden Raspberry Dashboard
 
 - # List Movies
 
-# Installation
+# Installation:
 
 1 - Clone the repository
 
@@ -24,21 +24,34 @@ cd your-repository
 2 - Install dependencies:
 
 npm install
-
 # or
-
 yarn install
 
-# Running the application
+# Running the application:
 
 Start the development server with:
 
 npm run dev
-
 # or
-
 yarn dev
 
-# License
+# Running Tests:
+
+This project uses **Vitest** for testing. You can run the tests and generate a coverage report with the following commands:
+
+Run all tests
+
+npm run test
+# or
+yarn test
+
+# Running Tests with coverage:
+
+npm run test:coverage
+# or
+yarn test:coverage
+
+
+# License:
 
 MIT License
